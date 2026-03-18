@@ -30,7 +30,7 @@ function App() {
       setSubjects(subjectsData);
       setStrategicSubjects(strategicData);
     } catch (err) {
-      setError('Error al cargar los datos. Asegúrate de que la API esté corriendo.');
+      setError('Error al cargar los datos locales de la aplicación.');
       console.error(err);
     } finally {
       setLoading(false);
