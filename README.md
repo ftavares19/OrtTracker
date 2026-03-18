@@ -67,6 +67,15 @@ Vite mostrara la URL para abrir en el navegador (generalmente http://localhost:5
 
 - Esta branch esta preparada para publicar el frontend en GitHub Pages sin depender de la API.
 - La configuracion de Vite usa base /DegreeTracker/ para el repo actual.
+- Incluye workflow en .github/workflows/deploy-pages.yml para build y deploy automatico.
+
+Pasos para activarlo en GitHub:
+
+1. Ir a Settings > Pages.
+2. En Build and deployment, elegir Source: GitHub Actions.
+3. Hacer push a la branch feat/frontend-offline-github-pages.
+4. Esperar que termine el workflow Deploy Frontend to GitHub Pages.
+5. La app quedara publicada en https://ftavares19.github.io/DegreeTracker/.
 
 ## Notas utiles
 
