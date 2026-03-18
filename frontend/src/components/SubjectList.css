@@ -1,0 +1,79 @@
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.semester-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.semester-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.semester-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.semester-stats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.stat-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-badge.approved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.stat-badge.in-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stat-badge.total {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.subject-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .subject-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .subject-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

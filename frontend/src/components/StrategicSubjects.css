@@ -1,0 +1,201 @@
+.strategic-subjects {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.strategic-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #495057;
+}
+
+.strategic-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #212529;
+  letter-spacing: -0.02em;
+}
+
+.strategic-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.strategic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.strategic-card {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.strategic-card:hover {
+  border-color: #adb5bd;
+}
+
+.strategic-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.strategic-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.strategic-name {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.3;
+}
+
+.semester-badge {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+.strategic-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.metric-item {
+  padding: 0.25rem 0.6rem;
+  background: #e9ecef;
+  color: #495057;
+  border-radius: 3px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.metric-item.action-required {
+  background: #495057;
+  color: #ffffff;
+}
+
+.metric-item.direct-impact {
+  background: #d1e7dd;
+  color: #0f5132;
+  font-weight: 600;
+}
+
+.metric-item.future-dependency {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.expand-button {
+  background: none;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  min-width: 2rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.expand-button:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.strategic-card-details {
+  padding: 0 1rem 1rem 1rem;
+  border-top: 1px solid #e9ecef;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.details-section {
+  margin-bottom: 1rem;
+}
+
+.details-section:last-child {
+  margin-bottom: 0;
+}
+
+.details-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #495057;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.details-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+  color: #495057;
+}
+
+.details-list li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.subject-semester {
+  font-size: 0.8rem;
+  color: #868e96;
+  font-weight: 400;
+}
+
+.details-list.future li {
+  color: #6c757d;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .strategic-subjects {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .strategic-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .strategic-card-header {
+    padding: 0.875rem;
+  }
+
+  .strategic-name {
+    font-size: 0.95rem;
+  }
+
+  .strategic-metrics {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metric-item {
+    font-size: 0.8rem;
+  }
+}
