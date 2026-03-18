@@ -73,9 +73,11 @@ Pasos para activarlo en GitHub:
 
 1. Ir a Settings > Pages.
 2. En Build and deployment, elegir Source: GitHub Actions.
-3. Hacer push a la branch feat/frontend-offline-github-pages.
+3. Hacer push a main para publicar en Pages.
 4. Esperar que termine el workflow Deploy Frontend to GitHub Pages.
 5. La app quedara publicada en https://ftavares19.github.io/DegreeTracker/.
+
+Nota: en la branch feat/frontend-offline-github-pages el workflow corre el build para validacion, pero el deploy queda omitido por proteccion del entorno github-pages.
 
 ## Notas utiles
 
