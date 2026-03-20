@@ -48,23 +48,32 @@ export default function SubjectItem({ subject, onUpdateStatus, onShowDetails }: 
 
   return (
     <div 
-      className={`subject-item ${getStatusClass()}`}
+      className={`subject-item ${getStatusClass()} ${canShowDetails ? 'clickable' : ''}`}
       onClick={() => canShowDetails && onShowDetails(subject.id)}
-      style={{ cursor: canShowDetails ? 'pointer' : 'default' }}
     >
-      <div className="subject-header">
+      <div className="subject-main">
         <span className={`status-icon ${getStatusClass()}`}>
           {getStatusIcon()}
         </span>
-        <span className={`status-label ${getStatusClass()}`}>
-          {getStatusLabel()}
-        </span>
-      </div>
 
-      <div className="subject-info">
-        <h3 className="subject-name">{subject.name}</h3>
+        <div className="subject-info">
+          <h3 className="subject-name">{subject.name}</h3>
+          <span className={`status-label ${getStatusClass()}`}>
+            {getStatusLabel()}
+          </span>
+        </div>
+
         {canShowDetails && (
-          <p className="subject-hint">Click para ver requisitos</p>
+          <button
+            type="button"
+            className="detail-link"
+            onClick={(e) => {
+              e.stopPropagation();
+              onShowDetails(subject.id);
+            }}
+          >
+            Requisitos
+          </button>
         )}
       </div>
 

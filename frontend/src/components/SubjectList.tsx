@@ -23,18 +23,12 @@ export default function SubjectList({ subjects, onUpdateStatus, onShowDetails }:
     <div className="subject-list">
       {semesters.map(semester => {
         const semesterSubjects = groupedBySemester[semester];
-        const approvedCount = semesterSubjects.filter(s => s.status === 'Approved').length;
-        const inProgressCount = semesterSubjects.filter(s => s.status === 'PartiallyApproved').length;
         
         return (
           <section key={semester} className="semester-section">
             <div className="semester-header">
-              <h2 className="semester-title">Semestre {semester}</h2>
-              <div className="semester-stats">
-                <span className="stat-badge approved">{approvedCount} aprobadas</span>
-                <span className="stat-badge in-progress">{inProgressCount} cursadas</span>
-                <span className="stat-badge total">{semesterSubjects.length} total</span>
-              </div>
+              <span className="semester-title">Sem {semester}</span>
+              <span className="semester-count">{semesterSubjects.length}</span>
             </div>
             <div className="subject-grid">
               {semesterSubjects.map(subject => (

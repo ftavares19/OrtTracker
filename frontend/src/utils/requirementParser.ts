@@ -61,13 +61,13 @@ export function parseRequirement(requirement: string): ParsedRequirement {
 export function getRequirementIcon(type: ParsedRequirement['type']): string {
   switch (type) {
     case 'partial':
-      return '📝'; // Crédito parcial (cursada)
+      return 'P';
     case 'total':
-      return '✅'; // Crédito total (aprobada)
+      return 'T';
     case 'count':
-      return '🔢'; // Cantidad
+      return '#';
     default:
-      return '⚠️';
+      return '!';
   }
 }
 
