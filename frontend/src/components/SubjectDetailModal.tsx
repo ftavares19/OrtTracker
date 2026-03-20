@@ -107,15 +107,15 @@ export default function SubjectDetailModal({ subjectId, onClose }: SubjectDetail
                   <p className="legend-title">Tipos de crédito:</p>
                   <ul className="legend-list">
                     <li>
-                      <span className="legend-icon">📝</span>
+                      <span className="legend-icon">P</span>
                       <strong>Crédito Parcial:</strong> Solo necesitas cursar la materia
                     </li>
                     <li>
-                      <span className="legend-icon">✅</span>
+                      <span className="legend-icon">T</span>
                       <strong>Crédito Total:</strong> Necesitas aprobar el examen final
                     </li>
                     <li>
-                      <span className="legend-icon">🔢</span>
+                      <span className="legend-icon">#</span>
                       <strong>Cantidad Mínima:</strong> Necesitas X materias aprobadas en total
                     </li>
                   </ul>
@@ -123,7 +123,7 @@ export default function SubjectDetailModal({ subjectId, onClose }: SubjectDetail
               </div>
             ) : (
               <div className="no-requirements">
-                <p className="eligible-message">✓ Esta materia está habilitada para cursar</p>
+                <p className="eligible-message">Esta materia está habilitada para cursar</p>
                 <p className="eligible-detail">Cumples con todos los requisitos necesarios</p>
               </div>
             )}

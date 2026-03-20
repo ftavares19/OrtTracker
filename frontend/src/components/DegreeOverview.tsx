@@ -13,7 +13,8 @@ export default function DegreeOverview({ degree }: DegreeOverviewProps) {
   return (
     <div className="degree-overview">
       <div className="degree-header">
-        <h1>{degree.name}</h1>
+        <h2>Resumen de carrera</h2>
+        <p>{degree.name}</p>
       </div>
       
       <div className="degree-stats">

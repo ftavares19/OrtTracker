@@ -1,63 +1,71 @@
 .degree-overview {
-  margin-bottom: 2rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .degree-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.degree-header h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  color: #1a1a1a;
-}
-
-.degree-description {
-  color: #666;
+.degree-header h2 {
+  font-size: 1.35rem;
   margin: 0;
-  font-size: 0.95rem;
+}
+
+.degree-header p {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin-top: 0.3rem;
 }
 
 .degree-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .stat-card {
-  background: #f8f9fa;
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
 .stat-label {
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
   font-weight: 500;
 }
 
 .stat-value {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .progress-bar {
-  height: 8px;
-  background: #e9ecef;
-  border-radius: 4px;
+  height: 7px;
+  background: var(--color-primary-subtle);
+  border-radius: 999px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4a90e2 0%, #357abd 100%);
-  transition: width 0.5s ease;
+  background: var(--color-primary);
+  transition: width 0.25s ease;
+}
+
+@media (max-width: 720px) {
+  .degree-stats {
+    grid-template-columns: 1fr;
+  }
 }
