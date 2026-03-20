@@ -144,12 +144,12 @@ function App() {
       <div className="container">
         <section className="hero">
           <h1 className="hero-title">ORT Tracker</h1>
-          <p className="hero-subtitle">Organizá tus materias y planificá tu avance.</p>
+          <p className="hero-subtitle">Organizá tus materias y planificá tu avance en el Plan 2019.</p>
         </section>
 
         <section className="degree-chips" aria-label="Carreras">
           <button className="degree-chip active" type="button">
-            {degree.name}
+            {degree.name} · Plan 2019
           </button>
         </section>
 
