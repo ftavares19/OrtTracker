@@ -62,3 +62,61 @@
   flex-direction: column;
   gap: 0.45rem;
 }
+
+.workshops-section {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.workshops-header {
+  border-bottom-style: dashed;
+}
+
+.workshops-title {
+  letter-spacing: 0.11em;
+}
+
+.workshops-subtitle {
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+  font-size: 0.66rem;
+  color: var(--color-text-muted);
+}
+
+.workshops-context {
+  margin: 0.1rem 0 0.45rem;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.elective-section {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.elective-header {
+  border-bottom-style: dashed;
+}
+
+.elective-title {
+  letter-spacing: 0.11em;
+}
+
+.elective-subtitle {
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+  font-size: 0.66rem;
+  color: var(--color-text-muted);
+}
+
+.elective-context {
+  margin: 0.1rem 0 0.45rem;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
