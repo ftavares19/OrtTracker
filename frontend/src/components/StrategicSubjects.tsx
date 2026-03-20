@@ -68,10 +68,19 @@ export default function StrategicSubjects({ strategicSubjects }: StrategicSubjec
                     <p className="details-title">
                       Si completas esta materia, destrabas:
                     </p>
-                    <ul className="details-list">
+                    <ul className="details-list details-list-relations">
                       {strategic.directUnlocks.subjects.map((subject, index) => (
-                        <li key={index}>
-                          {subject.name} <span className="subject-semester">· Semestre {subject.semester}</span>
+                        <li key={index} className="relation-row relation-row-unlock">
+                          <span className="relation-tag relation-tag-unlock">Desbloquea →</span>
+                          <span className="relation-subject">
+                            {subject.name} <span className="subject-semester">· Semestre {subject.semester}</span>
+                          </span>
+                          <span className="info-tip" tabIndex={0} aria-label="Ayuda sobre desbloqueo">
+                            ⓘ
+                            <span className="info-tip-content">
+                              Si aprobás esta materia, desbloqueás directamente la siguiente.
+                            </span>
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -83,10 +92,19 @@ export default function StrategicSubjects({ strategicSubjects }: StrategicSubjec
                     <p className="details-title">
                       Esta materia es previa de:
                     </p>
-                    <ul className="details-list future">
+                    <ul className="details-list details-list-relations future">
                       {strategic.futureDependents.subjects.map((subject, index) => (
-                        <li key={index}>
-                          {subject.name} <span className="subject-semester">· Semestre {subject.semester}</span>
+                        <li key={index} className="relation-row relation-row-prereq">
+                          <span className="relation-tag relation-tag-prereq">Previa de →</span>
+                          <span className="relation-subject">
+                            {subject.name} <span className="subject-semester">· Semestre {subject.semester}</span>
+                          </span>
+                          <span className="info-tip" tabIndex={0} aria-label="Ayuda sobre previa">
+                            ⓘ
+                            <span className="info-tip-content">
+                              Si aprobás esta materia, aún no desbloqueás la siguiente — necesitás cumplir otras previas también.
+                            </span>
+                          </span>
                         </li>
                       ))}
                     </ul>
